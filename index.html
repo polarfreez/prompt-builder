@@ -1,0 +1,59 @@
+<html>
+
+<head>
+  <meta charset="UTF-8"> 
+  <title>SyntZ - Home</title>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <div class="header">
+    <div class="navbar" id="navbar">
+      <a href="#"><img src="/images/logo-white.svg" alt="Logo" class="navbar-logo"></a>
+      <ul class="navbar-menu">
+        <li><a href="#home" id="navbar-link">Home</a></li>
+        <li><a href="#code" id="navbar-link">Code</a></li>
+        <li><a href="#arts" id="navbar-link">Arts</a></li>
+        <li><a href="#about" id="navbar-link">Sobre</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="main-container">
+    <h1 class="title">Prompt Builder</h1>
+    <div class="builder">
+        <div class="inputDiv">
+            <div id="inputDiv" placeholder="Your initial prompt goes here" contenteditable="true" onkeyup="updateArray()"></div>
+            <div id="options">
+
+            </div>
+        </div>
+        <div id="outputDiv"></div>
+    </div>
+  </div>
+
+  <footer>
+
+    <div class="footer-container">
+
+      <address class="contact">
+        <!-- contact info -->
+      </address>
+
+      <img src="/images/zero-studios-white.svg" class="zero-studios-logo">
+
+    </div>
+
+    <div class="copyright">
+      &copy; 2023 SyntZ (ZeRO Studios)<br />
+      Todos os direitos reservados.
+    </div>
+
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
