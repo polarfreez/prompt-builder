@@ -389,7 +389,7 @@ input[type=range]:focus::-ms-fill-upper {
     opacity: 0;
   }
 
-  .outputDiv {
+  #outputDiv {
     opacity: 0;
   }
 }
