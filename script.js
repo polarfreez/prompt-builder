@@ -32,20 +32,41 @@ function displayWords() {
         input.setAttribute('max', 2);
         input.onchange = function() {
             wordArray[index][1] = this.value;
-            updateInputDiv(word, index);
+            updateOutputDiv();
         };
         optionDiv.appendChild(p);
         optionDiv.appendChild(input);
         outputDiv.appendChild(optionDiv);
     });
+
+    if(window.innerWidth < 768){
+        if (outputDiv.innerText.trim() != '') {        
+            outputDiv.style.animation = 'fadeIn 0.5s ease-in-out forwards';
+        }else{        
+            outputDiv.style.animation = 'fadeOut 0.5s ease-in-out forwards';
+        }
+    }
 }
 
 
-function updateInputDiv() {
+function updateOutputDiv() {
     let outputDiv = document.getElementById('outputDiv');
+
     let newText = wordArray.map(word => word[1] == 1 ? word[0] : `(${word[0]}:${word[1]})`).join(', ');
     outputDiv.innerText = newText;
+
+    if(window.innerWidth < 768){
+        if (outputDiv.innerText.trim() != '') {        
+            outputDiv.style.animation = 'fadeIn 0.5s ease-in-out forwards';
+        }else{        
+            outputDiv.style.animation = 'fadeOut 0.5s ease-in-out forwards';
+        }
+    }
 }
+
+$("#inputDiv").on('keyup', updateOutputDiv);
+
+
 
 
 $("#outputDiv").on('click', function(){

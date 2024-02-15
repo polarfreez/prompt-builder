@@ -1,58 +1,81 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SyntZ - Home</title>
+  <link rel="icon" type="image/svg+xml" href="/images/logo-white.svg">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
   <link rel="stylesheet" href="./styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 
 <body>
-
-  <div class="header">
-    <div class="navbar" id="navbar">
-      <a href="#"><img src="/images/logo-white.svg" alt="Logo" class="navbar-logo"></a>
-      <ul class="navbar-menu">
-        <li><a href="#home" id="navbar-link">Home</a></li>
-        <li><a href="#code" id="navbar-link">Code</a></li>
-        <li><a href="#arts" id="navbar-link">Arts</a></li>
-        <li><a href="#about" id="navbar-link">Sobre</a></li>
-      </ul>
+  <div class="container">
+    <div class="header">
+      <div class="navbar" id="navbar">
+        <a href="#"><img src="/images/logo-white.svg" alt="Logo" class="navbar-logo"></a>
+        <ul class="navbar-menu">
+          <li><a href="#home" id="navbar-link">Home</a></li>
+          <li><a href="#code" id="navbar-link">Code</a></li>
+          <li><a href="#arts" id="navbar-link">Arts</a></li>
+          <li><a href="#about" id="navbar-link">Sobre</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
 
+    
   <div class="main-container">
     <h1 class="title">Prompt Builder</h1>
     <div class="builder">
-        <div class="inputDiv">
-            <div id="inputDiv" placeholder="Your initial prompt goes here" contenteditable="true" onkeyup="updateArray()"></div>
-            <div id="options">
-
-            </div>
+        <div class="io">
+            <div id="inputDiv" placeholder="Your initial prompt goes here" contenteditable="plaintext-only" onkeyup="updateArray()"></div>
+            <div id="outputDiv"></div>
         </div>
-        <div id="outputDiv"></div>
+        <div id="options">
+
+        </div>
+
     </div>
   </div>
 
-  <footer>
+    <footer>
 
-    <div class="footer-container">
+      <div class="footer-container">
 
-      <address class="contact">
-        <!-- contact info -->
-      </address>
+        <div class="contact">
+          <h3>Contato</h3>
 
-      <img src="/images/zero-studios-white.svg" class="zero-studios-logo">
+          <a href="mailto:rafaelbraun5@hotmail.com" class="contact-button">
+            <i class="fa-solid fa-envelope"></i> Email
+          </a>
 
-    </div>
+          <div class="social-icons">
+            <a href="https://github.com/syntz-dev">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://twitter.com/rafaaa2105">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="https://instagram.com/rafaaa2105/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
 
-    <div class="copyright">
-      &copy; 2023 SyntZ (ZeRO Studios)<br />
-      Todos os direitos reservados.
-    </div>
+        </div>
 
-  </footer>
+        <img src="/images/zero-studios-white.svg" class="zero-studios-logo">
 
+      </div>
+
+      <div class="copyright">
+        &copy; 2023 SyntZ (ZeRO Studios)<br />
+        Todos os direitos reservados.
+      </div>
+
+    </footer>
+  </div>
   <script src="./script.js"></script>
 </body>
 
