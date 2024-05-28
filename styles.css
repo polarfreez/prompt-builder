@@ -151,7 +151,6 @@ input[type=range]:focus::-ms-fill-upper {
   display: flex;
   align-items: center;
   max-width: 75%;
-  margin-inline: 20px;
 }
 
 #inputDiv {
@@ -194,20 +193,12 @@ input[type=range]:focus::-ms-fill-upper {
   overflow-wrap: break-word;
 }
 
-
-
-.io {
+.io, .modifier {
   display: flex;
   align-items: center;
   flex-direction: column;
   max-width: 20rem;
-}
-
-.modifier {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  max-width: 20rem;
+  margin-inline: 20px;
 }
 
 #outputDiv {
