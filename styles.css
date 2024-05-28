@@ -159,8 +159,6 @@ input[type=range]:focus::-ms-fill-upper {
   display: flex;
   min-width: 10rem;
   max-width: 75%;
-  padding: 8px;
-  margin-bottom: 8px;
   flex-direction: column;
   margin: 20px;
   border-radius: 20px;
