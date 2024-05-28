@@ -201,6 +201,13 @@ input[type=range]:focus::-ms-fill-upper {
   max-width: 20rem;
 }
 
+.modifier {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 20rem;
+}
+
 #outputDiv {
   display: flex;
   min-width: 10rem;
@@ -212,6 +219,10 @@ input[type=range]:focus::-ms-fill-upper {
   flex-direction: column;
   overflow-wrap: break-word;
   cursor: pointer;
+}
+
+.io p, .modifier p {
+  text-align: center;
 }
 
 @media (max-width: 768px) {
