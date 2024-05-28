@@ -139,6 +139,7 @@ input[type=range]:focus::-ms-fill-upper {
   flex-direction: column;
   height: 67%;
   margin-top: 20vh;
+  width: 75%;
 }
 
 .description {
@@ -150,6 +151,7 @@ input[type=range]:focus::-ms-fill-upper {
   display: flex;
   align-items: center;
   max-width: 75%;
+  margin-inline: 20px;
 }
 
 #inputDiv {
