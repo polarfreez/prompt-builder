@@ -141,8 +141,9 @@ input[type=range]:focus::-ms-fill-upper {
   margin-top: 20vh;
 }
 
-.title {
-  margin-bottom: 120px;
+.description {
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .builder {
