@@ -163,7 +163,7 @@ input[type=range]:focus::-ms-fill-upper {
   margin-bottom: 8px;
   flex-direction: column;
   margin: 20px;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 20px;
   padding: 10px 20px;
 }
 
@@ -187,7 +187,7 @@ input[type=range]:focus::-ms-fill-upper {
   margin: 20px;
   overflow-y: scroll;
   max-height: 18rem;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 20px;
   padding: 10px 20px;
 }
 
@@ -218,7 +218,7 @@ input[type=range]:focus::-ms-fill-upper {
   flex-direction: column;
   overflow-wrap: break-word;
   cursor: pointer;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 20px;
   padding: 10px 20px;
 }
 
